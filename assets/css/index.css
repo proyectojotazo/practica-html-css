@@ -127,13 +127,3 @@ body{
     font-weight: 700;
 
 }
-
-/* @media (max-height:630px) {
-    body{
-        height: min-content;
-    }
-
-    .form{
-        margin: 3rem 0;
-    }
-} */
