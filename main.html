@@ -1,46 +1,97 @@
-<!-- ICONS 
-     MENU
-    
--->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- FONT AWESOME-->
-    <script src="./assets/fontsawesome/all.min.js"></script>
-    <link rel="stylesheet" href="./assets/fontsawesome/all.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONT AWESOME-->
+  <script src="./assets/fontsawesome/all.min.js"></script>
+  <link rel="stylesheet" href="./assets/fontsawesome/all.min.css">
 
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <title>FlixNet</title>
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <title>FlixNet</title>
 </head>
 
 <body>
-    <header class="header">
-        <img class="header__logo" src="./assets/img/logo.png" alt="logo">
-        <input class="header__inp-search" type="text" name="search" placeholder="Buscar">
-        <nav class="header__menu">
-            <i class="fas fa-bars fa-2x header__icon-menu-responsive hidden"></i>
-            <ul class="menu__ul">
-                <li class="menu__ul-item"><a class="menu__ul-link" href="#novedades">Novedades</a>
-                </li>
-                <li class="menu__ul-item"><a class="menu__ul-link" href="#series">Series</a></li>
-                <li class="menu__ul-item"><a class="menu__ul-link" href="#peliculas">Peliculas</a>
-                </li>
-                <li class="menu__ul-item"><a class="menu__ul-link" href="#favoritos">Favoritos</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="wrapper-close">
-            <i class="far fa-times-circle wrapper-close__icon"></i>
-            <!-- <p >Cerrar Sesión</p> -->
-            <a class="wrapper-close__text" href="/index.html">Cerrar Sesión</a>
-        </div>
-    </header>
-    <main class="main"></main>
+  <header class="header">
+    <img class="header__logo" src="./assets/img/logo.png" alt="logo">
+    <input class="header__inp-search" type="text" name="search" placeholder="Buscar">
+    <nav class="header__menu">
+      <i class="fas fa-bars fa-2x header__icon-menu-responsive hidden"></i>
+      <ul class="menu__ul">
+        <li class="menu__ul-item"><a class="menu__ul-link" href="#novedades">Novedades</a>
+        </li>
+        <li class="menu__ul-item"><a class="menu__ul-link" href="#series">Series</a></li>
+        <li class="menu__ul-item"><a class="menu__ul-link" href="#peliculas">Peliculas</a>
+        </li>
+        <li class="menu__ul-item"><a class="menu__ul-link" href="#favoritos">Favoritos</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="wrapper-close">
+      <i class="far fa-times-circle wrapper-close__icon"></i>
+      <a class="wrapper-close__text" href="/index.html">Cerrar Sesión</a>
+    </div>
+  </header>
+  <main class="main">
+    <section class="flex-container">
+      <h1 class="flex-container__title">NOVEDADES</h1>
+      <section class="flex-container__card">
+        <article class="card__item">
+          <img class="item__img" src="https://via.placeholder.com/300x200" alt="img1">
+          <div class="wrapper-info">
+            <p class="wrapper-info__item">Pelicula</p>
+            <p class="wrapper-info__item">Calificacion</p>
+            <p class="wrapper-info__item">1987</p>
+            <p class="wrapper-info__item">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <i class="far fa-heart"></i>
+          </div>
+        </article>
+        <article class="card__item">
+          <img src="https://via.placeholder.com/300x200" alt="img2">
+          <div class="wrapper-info">
+            <p>Pelicula</p>
+            <p>Calificacion</p>
+            <p>1987</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <i class="far fa-heart"></i>
+          </div>
+        </article>
+        <article class="card__item">
+          <img src="https://via.placeholder.com/300x200" alt="img3">
+          <div class="wrapper-info">
+            <p>Pelicula</p>
+            <p>Calificacion</p>
+            <p>1987</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <i class="far fa-heart"></i>
+          </div>
+        </article>
+        <article class="card__item">
+          <img src="https://via.placeholder.com/300x200" alt="img4">
+          <div class="wrapper-info">
+            <p>Pelicula</p>
+            <p>Calificacion</p>
+            <p>1987</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <i class="far fa-heart"></i>
+          </div>
+        </article>
+      </section>
+    </section>
+    <!--     
+    <section class="flex-container">
+      <h1>SERIES</h1>
+    </section>
+    <section class="flex-container">
+      <h1>PELICULAS</h1>
+    </section>
+    <section class="flex-container">
+      <h1>FAVORITOS</h1>
+    </section> -->
+  </main>
 </body>
 
 </html>
