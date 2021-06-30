@@ -66,6 +66,15 @@
   right: 25px;
 }
 
+.menu-responsive-checkbox {
+  position: absolute;
+  top: -28px;
+  right: 25px;
+  width: 24.5px;
+  height: 28px;
+  opacity: 0.01;
+}
+
 .menu__ul {
   display: flex;
   flex-direction: column;
@@ -79,7 +88,7 @@
   transition: ease-in-out 0.8s;
 }
 
-.header__icon-menu-responsive:hover ~ .menu__ul {
+.menu-responsive-checkbox:checked ~ .menu__ul {
   left: 0;
 }
 
@@ -142,6 +151,7 @@
 .wrapper-info {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
@@ -230,6 +240,7 @@
 }
 
 @media screen and (min-width: 550px) {
+  /* Ocultamos burguer menu */
   .hidden {
     display: none;
   }
@@ -278,6 +289,12 @@
 
   .main {
     margin-top: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 684px) {
+  .card__item:last-child {
+    grid-column-end: span 2;
   }
 }
 
@@ -330,5 +347,20 @@
 
   .header__inp-search {
     width: 350px;
+  }
+}
+
+@media screen and (min-width: 1416px) {
+  .card__item:nth-child(3),
+  .card__item:nth-child(4) {
+    grid-column-end: span 2;
+  }
+}
+
+@media screen and (min-width: 1758px) {
+  .card__item:nth-child(3),
+  .card__item:nth-child(4),
+  .card__item:last-child {
+    grid-column-end: initial;
   }
 }
