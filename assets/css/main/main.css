@@ -1,36 +1,3 @@
-/* FONTS */
-
-@font-face {
-  font-family: Montserrat-Regular;
-  src: url(../fonts/Montserrat-Regular.ttf);
-}
-
-@font-face {
-  font-family: Montserrat-Bold;
-  src: url(../fonts/Montserrat-Bold.ttf);
-}
-
-/* VARS */
-
-:root {
-  --primary-bg: #0582ca;
-  --menu-resp: #0582ca;
-  --bg-color: #051923;
-  --btn-color: #003554;
-}
-
-/* RESET & GENERAL */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #051923;
-}
-
 /* HEADER */
 
 .header {
@@ -46,23 +13,25 @@ body {
   margin: 0 auto;
   margin-bottom: 10px;
   width: 100%;
-  z-index: 1;
+  height: 80px;
+  z-index: 10;
 }
 
 .header__logo {
-  width: 100px;
-  height: 100px;
+  align-self: flex-start;
   margin-left: 1.2rem;
+  width: 70px;
+  height: 70px;
 }
 
 .header__inp-search {
   background-color: var(--bg-color);
-  border-radius: 12px;
   color: #fff;
-  padding: 0.5rem 0;
-  padding-left: 0.5rem;
   outline: none;
   border: none;
+  border-radius: 12px;
+  padding: 0.5rem 0;
+  padding-left: 0.5rem;
   width: 130px;
 }
 
@@ -71,47 +40,41 @@ body {
   font-family: Montserrat-Regular;
 }
 
-.wrapper-close {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 130px;
-  margin-right: 1rem;
-}
-
-.wrapper-close__text {
+.log-out {
+  align-self: flex-start;
+  color: #ddd;
+  margin-right: 1.5rem;
+  margin-top: 1rem;
   text-decoration: none;
-  color: #fff;
 }
 
 /* MENU */
 
 .header__menu {
-  position: absolute;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  top: 95px;
+  position: absolute;
+  top: 70px;
   width: 100%;
-  height: 88vh;
+  height: 30px;
 }
 
 .header__icon-menu-responsive {
   position: absolute;
   top: -28px;
-  right: 24px;
-  width: 100%;
+  right: 25px;
 }
 
 .menu__ul {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  position: absolute;
   background-color: var(--primary-bg);
-  width: 100%;
+  position: absolute;
   left: -100vw;
-  height: calc(100vh - 95px);
+  width: 100%;
+  height: calc(100vh - 70px);
   list-style: none;
   transition: ease-in-out 0.8s;
 }
@@ -126,17 +89,18 @@ body {
 
 .menu__ul-link {
   color: #fff;
-  text-decoration: none;
   font-size: 20px;
-  padding: 0.5rem;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  transition: all 0.3s;
 }
 
 /* MAIN CONTENT */
 
 .flex-container {
-  color: #fff;
   display: flex;
   flex-direction: column;
+  color: #fff;
   margin: 0.5rem;
 }
 
@@ -147,25 +111,39 @@ body {
   text-align: center;
 }
 
-.flex-container__card {
-  display: flex;
-  flex-wrap: wrap;
+.grid-container {
+  display: grid;
   justify-content: space-evenly;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, 326px);
 }
 
 /* CARD */
 
 .card__item {
   position: relative;
-  margin: 0.5rem;
-  width: 300px;
+  width: 100%;
+  margin-top: 1.3rem;
+}
+
+.item-video {
+  position: absolute;
+  border-radius: 8px;
+  object-fit: unset;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.item-video:hover {
+  opacity: 0.5;
 }
 
 .wrapper-info {
   display: flex;
+  justify-content: space-evenly;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   width: 100%;
   height: 200px;
   opacity: 1;
@@ -173,43 +151,78 @@ body {
 
 .wrapper-info__item {
   padding: 0.5rem;
+  line-height: 60px;
+  text-align: center;
   width: 145px;
   height: 60px;
-  text-align: center;
-  line-height: 60px;
 }
 
 .wrapper-info__sinopsis {
   padding: 0.5rem;
+  line-height: 30px;
   width: 145px;
   height: 130px;
-  line-height: 30px;
 }
 
-.item-video {
+.wrapper-like {
+  background-color: var(--btn-color);
+  border-radius: 8px 8px 0 0;
   position: absolute;
-  width: 300px;
-  height: 200px;
-  object-fit: unset;
+  top: -19px;
+  right: 0;
+  width: 20px;
+  height: 23px;
 }
 
-.item-video:hover {
-  opacity: 0.1;
+.check-like {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  opacity: 0.01;
+  cursor: pointer;
+  z-index: 1;
 }
 
-.wrapper-info__icon {
-  position: relative;
-  left: 110px;
-  z-index: -10;
+.like-icon {
+  position: absolute;
+  top: 3px;
+  right: 2px;
 }
+
+.clicked {
+  display: none;
+}
+
+.check-like:checked ~ .wrapper-like > .default {
+  display: none;
+}
+
+.check-like:checked ~ .wrapper-like > .clicked {
+  display: inline;
+}
+/* .check-like:checked ~ .default {
+  display: none;
+}
+
+.check-like:checked ~ .clicked {
+  display: inline;
+} */
+
+.link-details {
+  background-color: var(--btn-color);
+  color: #fff;
+  border-radius: 6px 6px 0 0;
+  position: absolute;
+  top: -26px;
+  padding: 0.3rem;
+  text-decoration: none;
+}
+
 /* MEDIA QUERIES */
 
-@media screen and (max-height: 414px) {
-  .header {
-    height: 104px;
-  }
-}
-
+/* Mostrar busqueda */
 @media screen and (max-width: 450px) {
   .header__inp-search {
     display: none;
@@ -223,14 +236,16 @@ body {
 
   .header {
     flex-wrap: wrap;
+    height: min-content;
   }
 
   .header__inp-search {
     width: 30%;
   }
 
-  .wrapper-close {
-    margin-bottom: 0;
+  .log-out {
+    align-self: initial;
+    margin-top: initial;
   }
 
   .header__menu {
@@ -253,15 +268,34 @@ body {
   .menu__ul-link {
     font-size: initial;
   }
+
+  .menu__ul-link:hover {
+    border-radius: 8px;
+    background-color: var(--bg-color);
+    box-shadow: 1px 1px 3px var(--btn-color);
+    text-shadow: 1px 1px 3px #fff;
+  }
+
+  .main {
+    margin-top: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 880px) {
+  .header {
+    height: min-content;
+  }
   .header__inp-search {
     width: 230px;
   }
 
+  .header__logo {
+    width: 110px;
+    height: 110px;
+  }
+
   .header__menu {
-    width: 40%;
+    width: min-content;
     order: initial;
   }
 
@@ -276,22 +310,17 @@ body {
   .flex-container {
     margin: 0.5rem 2rem;
   }
-
-  .flex-container__card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-height: 440px;
-    overflow: hidden;
-  }
 }
 
-@media screen and (min-width: 930px) {
-  .flex-container__title {
-    text-align: left;
+@media screen and (min-width: 1080px) {
+  .header__menu {
+    width: 40%;
+  }
+
+  .log-out {
+    margin-right: 1.5rem;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .header__logo {
     width: 130px;
@@ -301,15 +330,5 @@ body {
 
   .header__inp-search {
     width: 350px;
-  }
-
-  .wrapper-close {
-    margin-right: 2rem;
-  }
-}
-
-@media screen and (min-width: 1330px) {
-  .flex-container__card {
-    max-height: 220px;
   }
 }

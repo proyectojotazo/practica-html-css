@@ -9,12 +9,13 @@
   <script src="./assets/fontsawesome/all.min.js"></script>
   <link rel="stylesheet" href="./assets/fontsawesome/all.min.css">
 
-  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/general.css">
+  <link rel="stylesheet" href="./assets/css/main/main.css">
   <title>FlixNet</title>
 </head>
 
 <body>
-  <header class="header">
+  <header class=" header">
     <img class="header__logo" src="./assets/img/logo.png" alt="logo">
     <input class="header__inp-search" type="text" name="search" placeholder="Buscar">
     <nav class="header__menu">
@@ -29,272 +30,396 @@
         </li>
       </ul>
     </nav>
-    <div class="wrapper-close">
-      <i class="far fa-times-circle wrapper-close__icon"></i>
-      <a class="wrapper-close__text" href="/index.html">Cerrar Sesión</a>
-    </div>
+
+    <a class="log-out" href="/index.html">Cerrar Sesión</a>
+
   </header>
   <main class="main">
     <section class="flex-container">
       <h1 class="flex-container__title" id="novedades">NOVEDADES</h1>
-      <section class="flex-container__card">
+      <section class="grid-container">
         <article class="card__item">
+          <a href="details.html" class="link-details">Detalles</a>
+          <input class="check-like" type="checkbox">
+          <div class="wrapper-like">
+
+            <i class="far fa-heart like-icon default"></i>
+            <i class="fas fa-heart like-icon clicked"></i>
+          </div>
           <video class="item-video" src="./assets/video/China - 43238.mp4" controls></video>
           <div class="wrapper-info">
-            <p class="wrapper-info__item">Pelicula</p>
-            <p class="wrapper-info__item">Calificacion</p>
+            <p class="wrapper-info__item">Amelie</p>
+            <p class="wrapper-info__item">3.5/5</p>
             <p class="wrapper-info__item">1987</p>
             <p class="wrapper-info__sinopsis">Lorem ipsum dolor sit amet consectetur adipisicing
               elit.
             </p>
-            <i class="far fa-heart wrapper-info__icon"></i>
           </div>
         </article>
         <article class="card__item">
+          <a href="details.html" class="link-details">Detalles</a>
+          <input class="check-like" type="checkbox">
+          <div class="wrapper-like">
+            <i class="far fa-heart like-icon default"></i>
+            <i class="fas fa-heart like-icon clicked"></i>
+          </div>
           <video class="item-video" src="./assets/video/Mountains - 59291.mp4" controls></video>
           <div class="wrapper-info">
-            <p class="wrapper-info__item">Pelicula</p>
-            <p class="wrapper-info__item">Calificacion</p>
+            <p class="wrapper-info__item">Amelie</p>
+            <p class="wrapper-info__item">3.5/5</p>
             <p class="wrapper-info__item">1987</p>
             <p class="wrapper-info__sinopsis">Lorem ipsum dolor sit amet consectetur adipisicing
               elit.
             </p>
-            <i class="far fa-heart wrapper-info__icon"></i>
           </div>
+
         </article>
         <article class="card__item">
+          <a href="details.html" class="link-details">Detalles</a>
+          <input class="check-like" type="checkbox">
+          <div class="wrapper-like">
+            <i class="far fa-heart like-icon default"></i>
+            <i class="fas fa-heart like-icon clicked"></i>
+          </div>
           <video class="item-video" src="./assets/video/Trafic - 53902.mp4" controls></video>
           <div class="wrapper-info">
-            <p class="wrapper-info__item">Pelicula</p>
-            <p class="wrapper-info__item">Calificacion</p>
+            <p class="wrapper-info__item">Amelie</p>
+            <p class="wrapper-info__item">3.5/5</p>
             <p class="wrapper-info__item">1987</p>
             <p class="wrapper-info__sinopsis">Lorem ipsum dolor sit amet consectetur adipisicing
               elit.
             </p>
-            <i class="far fa-heart wrapper-info__icon"></i>
           </div>
+
         </article>
         <article class="card__item">
+          <a href="details.html" class="link-details">Detalles</a>
+          <input class="check-like" type="checkbox">
+          <div class="wrapper-like">
+            <i class="far fa-heart like-icon default"></i>
+            <i class="fas fa-heart like-icon clicked"></i>
+          </div>
           <video class="item-video" src="./assets/video/Clouds - 35573.mp4" controls></video>
           <div class="wrapper-info">
-            <p class="wrapper-info__item">Pelicula</p>
-            <p class="wrapper-info__item">Calificacion</p>
+            <p class="wrapper-info__item">Amelie</p>
+            <p class="wrapper-info__item">3.5/5</p>
             <p class="wrapper-info__item">1987</p>
             <p class="wrapper-info__sinopsis">Lorem ipsum dolor sit amet consectetur adipisicing
               elit.
             </p>
-            <i class="far fa-heart wrapper-info__icon"></i>
+
           </div>
+
         </article>
         <article class="card__item">
+          <a href="details.html" class="link-details">Detalles</a>
+          <input class="check-like" type="checkbox">
+          <div class="wrapper-like">
+            <i class="far fa-heart like-icon default"></i>
+            <i class="fas fa-heart like-icon clicked"></i>
+          </div>
           <video class="item-video" src="./assets/video/Waves - 70796.mp4" controls></video>
           <div class="wrapper-info">
-            <p class="wrapper-info__item">Pelicula</p>
-            <p class="wrapper-info__item">Calificacion</p>
+            <p class="wrapper-info__item">Amelie</p>
+            <p class="wrapper-info__item">3.5/5</p>
             <p class="wrapper-info__item">1987</p>
             <p class="wrapper-info__sinopsis">Lorem ipsum dolor sit amet consectetur adipisicing
               elit.
             </p>
-            <i class="far fa-heart wrapper-info__icon"></i>
           </div>
+
         </article>
       </section>
     </section>
-    <!-- <section class="flex-container">
-      <h1 class="flex-container__title" id="series">SERIES</h1>
-      <section class="flex-container__card">
+
+    <section class="flex-container">
+      <h1 class="flex-container__title" id="novedades">SERIES</h1>
+      <section class="grid-container">
         <article class="card__item">
+          <a href="details.html" class="link-details">Detalles</a>
+          <input class="check-like" type="checkbox">
+          <div class="wrapper-like">
+
+            <i class="far fa-heart like-icon default"></i>
+            <i class="fas fa-heart like-icon clicked"></i>
+          </div>
           <video class="item-video" src="./assets/video/China - 43238.mp4" controls></video>
           <div class="wrapper-info">
-            <p class="wrapper-info__item">Pelicula</p>
-            <p class="wrapper-info__item">Calificacion</p>
+            <p class="wrapper-info__item">Amelie</p>
+            <p class="wrapper-info__item">3.5/5</p>
             <p class="wrapper-info__item">1987</p>
             <p class="wrapper-info__sinopsis">Lorem ipsum dolor sit amet consectetur adipisicing
               elit.
             </p>
-            <i class="far fa-heart wrapper-info__icon"></i>
           </div>
         </article>
         <article class="card__item">
+          <a href="details.html" class="link-details">Detalles</a>
+          <input class="check-like" type="checkbox">
+          <div class="wrapper-like">
+            <i class="far fa-heart like-icon default"></i>
+            <i class="fas fa-heart like-icon clicked"></i>
+          </div>
           <video class="item-video" src="./assets/video/Mountains - 59291.mp4" controls></video>
           <div class="wrapper-info">
-            <p class="wrapper-info__item">Pelicula</p>
-            <p class="wrapper-info__item">Calificacion</p>
+            <p class="wrapper-info__item">Amelie</p>
+            <p class="wrapper-info__item">3.5/5</p>
             <p class="wrapper-info__item">1987</p>
             <p class="wrapper-info__sinopsis">Lorem ipsum dolor sit amet consectetur adipisicing
               elit.
             </p>
-            <i class="far fa-heart wrapper-info__icon"></i>
           </div>
+
         </article>
         <article class="card__item">
+          <a href="details.html" class="link-details">Detalles</a>
+          <input class="check-like" type="checkbox">
+          <div class="wrapper-like">
+            <i class="far fa-heart like-icon default"></i>
+            <i class="fas fa-heart like-icon clicked"></i>
+          </div>
           <video class="item-video" src="./assets/video/Trafic - 53902.mp4" controls></video>
           <div class="wrapper-info">
-            <p class="wrapper-info__item">Pelicula</p>
-            <p class="wrapper-info__item">Calificacion</p>
+            <p class="wrapper-info__item">Amelie</p>
+            <p class="wrapper-info__item">3.5/5</p>
             <p class="wrapper-info__item">1987</p>
             <p class="wrapper-info__sinopsis">Lorem ipsum dolor sit amet consectetur adipisicing
               elit.
             </p>
-            <i class="far fa-heart wrapper-info__icon"></i>
           </div>
+
         </article>
         <article class="card__item">
+          <a href="details.html" class="link-details">Detalles</a>
+          <input class="check-like" type="checkbox">
+          <div class="wrapper-like">
+            <i class="far fa-heart like-icon default"></i>
+            <i class="fas fa-heart like-icon clicked"></i>
+          </div>
           <video class="item-video" src="./assets/video/Clouds - 35573.mp4" controls></video>
           <div class="wrapper-info">
-            <p class="wrapper-info__item">Pelicula</p>
-            <p class="wrapper-info__item">Calificacion</p>
+            <p class="wrapper-info__item">Amelie</p>
+            <p class="wrapper-info__item">3.5/5</p>
             <p class="wrapper-info__item">1987</p>
             <p class="wrapper-info__sinopsis">Lorem ipsum dolor sit amet consectetur adipisicing
               elit.
             </p>
-            <i class="far fa-heart wrapper-info__icon"></i>
+
           </div>
+
         </article>
         <article class="card__item">
+          <a href="details.html" class="link-details">Detalles</a>
+          <input class="check-like" type="checkbox">
+          <div class="wrapper-like">
+            <i class="far fa-heart like-icon default"></i>
+            <i class="fas fa-heart like-icon clicked"></i>
+          </div>
           <video class="item-video" src="./assets/video/Waves - 70796.mp4" controls></video>
           <div class="wrapper-info">
-            <p class="wrapper-info__item">Pelicula</p>
-            <p class="wrapper-info__item">Calificacion</p>
+            <p class="wrapper-info__item">Amelie</p>
+            <p class="wrapper-info__item">3.5/5</p>
             <p class="wrapper-info__item">1987</p>
             <p class="wrapper-info__sinopsis">Lorem ipsum dolor sit amet consectetur adipisicing
               elit.
             </p>
-            <i class="far fa-heart wrapper-info__icon"></i>
           </div>
+
         </article>
       </section>
     </section>
     <section class="flex-container">
-      <h1 class="flex-container__title" id="peliculas">PELICULAS</h1>
-      <section class="flex-container__card">
+      <h1 class="flex-container__title" id="novedades">PELICULAS</h1>
+      <section class="grid-container">
         <article class="card__item">
+          <a href="details.html" class="link-details">Detalles</a>
+          <input class="check-like" type="checkbox">
+          <div class="wrapper-like">
+
+            <i class="far fa-heart like-icon default"></i>
+            <i class="fas fa-heart like-icon clicked"></i>
+          </div>
           <video class="item-video" src="./assets/video/China - 43238.mp4" controls></video>
           <div class="wrapper-info">
-            <p class="wrapper-info__item">Pelicula</p>
-            <p class="wrapper-info__item">Calificacion</p>
+            <p class="wrapper-info__item">Amelie</p>
+            <p class="wrapper-info__item">3.5/5</p>
             <p class="wrapper-info__item">1987</p>
             <p class="wrapper-info__sinopsis">Lorem ipsum dolor sit amet consectetur adipisicing
               elit.
             </p>
-            <i class="far fa-heart wrapper-info__icon"></i>
           </div>
         </article>
         <article class="card__item">
+          <a href="details.html" class="link-details">Detalles</a>
+          <input class="check-like" type="checkbox">
+          <div class="wrapper-like">
+            <i class="far fa-heart like-icon default"></i>
+            <i class="fas fa-heart like-icon clicked"></i>
+          </div>
           <video class="item-video" src="./assets/video/Mountains - 59291.mp4" controls></video>
           <div class="wrapper-info">
-            <p class="wrapper-info__item">Pelicula</p>
-            <p class="wrapper-info__item">Calificacion</p>
+            <p class="wrapper-info__item">Amelie</p>
+            <p class="wrapper-info__item">3.5/5</p>
             <p class="wrapper-info__item">1987</p>
             <p class="wrapper-info__sinopsis">Lorem ipsum dolor sit amet consectetur adipisicing
               elit.
             </p>
-            <i class="far fa-heart wrapper-info__icon"></i>
           </div>
+
         </article>
         <article class="card__item">
+          <a href="details.html" class="link-details">Detalles</a>
+          <input class="check-like" type="checkbox">
+          <div class="wrapper-like">
+            <i class="far fa-heart like-icon default"></i>
+            <i class="fas fa-heart like-icon clicked"></i>
+          </div>
           <video class="item-video" src="./assets/video/Trafic - 53902.mp4" controls></video>
           <div class="wrapper-info">
-            <p class="wrapper-info__item">Pelicula</p>
-            <p class="wrapper-info__item">Calificacion</p>
+            <p class="wrapper-info__item">Amelie</p>
+            <p class="wrapper-info__item">3.5/5</p>
             <p class="wrapper-info__item">1987</p>
             <p class="wrapper-info__sinopsis">Lorem ipsum dolor sit amet consectetur adipisicing
               elit.
             </p>
-            <i class="far fa-heart wrapper-info__icon"></i>
           </div>
+
         </article>
         <article class="card__item">
+          <a href="details.html" class="link-details">Detalles</a>
+          <input class="check-like" type="checkbox">
+          <div class="wrapper-like">
+            <i class="far fa-heart like-icon default"></i>
+            <i class="fas fa-heart like-icon clicked"></i>
+          </div>
           <video class="item-video" src="./assets/video/Clouds - 35573.mp4" controls></video>
           <div class="wrapper-info">
-            <p class="wrapper-info__item">Pelicula</p>
-            <p class="wrapper-info__item">Calificacion</p>
+            <p class="wrapper-info__item">Amelie</p>
+            <p class="wrapper-info__item">3.5/5</p>
             <p class="wrapper-info__item">1987</p>
             <p class="wrapper-info__sinopsis">Lorem ipsum dolor sit amet consectetur adipisicing
               elit.
             </p>
-            <i class="far fa-heart wrapper-info__icon"></i>
+
           </div>
+
         </article>
         <article class="card__item">
+          <a href="details.html" class="link-details">Detalles</a>
+          <input class="check-like" type="checkbox">
+          <div class="wrapper-like">
+            <i class="far fa-heart like-icon default"></i>
+            <i class="fas fa-heart like-icon clicked"></i>
+          </div>
           <video class="item-video" src="./assets/video/Waves - 70796.mp4" controls></video>
           <div class="wrapper-info">
-            <p class="wrapper-info__item">Pelicula</p>
-            <p class="wrapper-info__item">Calificacion</p>
+            <p class="wrapper-info__item">Amelie</p>
+            <p class="wrapper-info__item">3.5/5</p>
             <p class="wrapper-info__item">1987</p>
             <p class="wrapper-info__sinopsis">Lorem ipsum dolor sit amet consectetur adipisicing
               elit.
             </p>
-            <i class="far fa-heart wrapper-info__icon"></i>
           </div>
+
         </article>
       </section>
     </section>
     <section class="flex-container">
-      <h1 class="flex-container__title" id="favoritos">FAVORITOS</h1>
-      <section class="flex-container__card">
+      <h1 class="flex-container__title" id="novedades">FAVORITOS</h1>
+      <section class="grid-container">
         <article class="card__item">
+          <a href="details.html" class="link-details">Detalles</a>
+          <input class="check-like" type="checkbox">
+          <div class="wrapper-like">
+
+            <i class="far fa-heart like-icon default"></i>
+            <i class="fas fa-heart like-icon clicked"></i>
+          </div>
           <video class="item-video" src="./assets/video/China - 43238.mp4" controls></video>
           <div class="wrapper-info">
-            <p class="wrapper-info__item">Pelicula</p>
-            <p class="wrapper-info__item">Calificacion</p>
+            <p class="wrapper-info__item">Amelie</p>
+            <p class="wrapper-info__item">3.5/5</p>
             <p class="wrapper-info__item">1987</p>
             <p class="wrapper-info__sinopsis">Lorem ipsum dolor sit amet consectetur adipisicing
               elit.
             </p>
-            <i class="far fa-heart wrapper-info__icon"></i>
           </div>
         </article>
         <article class="card__item">
+          <a href="details.html" class="link-details">Detalles</a>
+          <input class="check-like" type="checkbox">
+          <div class="wrapper-like">
+            <i class="far fa-heart like-icon default"></i>
+            <i class="fas fa-heart like-icon clicked"></i>
+          </div>
           <video class="item-video" src="./assets/video/Mountains - 59291.mp4" controls></video>
           <div class="wrapper-info">
-            <p class="wrapper-info__item">Pelicula</p>
-            <p class="wrapper-info__item">Calificacion</p>
+            <p class="wrapper-info__item">Amelie</p>
+            <p class="wrapper-info__item">3.5/5</p>
             <p class="wrapper-info__item">1987</p>
             <p class="wrapper-info__sinopsis">Lorem ipsum dolor sit amet consectetur adipisicing
               elit.
             </p>
-            <i class="far fa-heart wrapper-info__icon"></i>
           </div>
+
         </article>
         <article class="card__item">
+          <a href="details.html" class="link-details">Detalles</a>
+          <input class="check-like" type="checkbox">
+          <div class="wrapper-like">
+            <i class="far fa-heart like-icon default"></i>
+            <i class="fas fa-heart like-icon clicked"></i>
+          </div>
           <video class="item-video" src="./assets/video/Trafic - 53902.mp4" controls></video>
           <div class="wrapper-info">
-            <p class="wrapper-info__item">Pelicula</p>
-            <p class="wrapper-info__item">Calificacion</p>
+            <p class="wrapper-info__item">Amelie</p>
+            <p class="wrapper-info__item">3.5/5</p>
             <p class="wrapper-info__item">1987</p>
             <p class="wrapper-info__sinopsis">Lorem ipsum dolor sit amet consectetur adipisicing
               elit.
             </p>
-            <i class="far fa-heart wrapper-info__icon"></i>
           </div>
+
         </article>
         <article class="card__item">
+          <a href="details.html" class="link-details">Detalles</a>
+          <input class="check-like" type="checkbox">
+          <div class="wrapper-like">
+            <i class="far fa-heart like-icon default"></i>
+            <i class="fas fa-heart like-icon clicked"></i>
+          </div>
           <video class="item-video" src="./assets/video/Clouds - 35573.mp4" controls></video>
           <div class="wrapper-info">
-            <p class="wrapper-info__item">Pelicula</p>
-            <p class="wrapper-info__item">Calificacion</p>
+            <p class="wrapper-info__item">Amelie</p>
+            <p class="wrapper-info__item">3.5/5</p>
             <p class="wrapper-info__item">1987</p>
             <p class="wrapper-info__sinopsis">Lorem ipsum dolor sit amet consectetur adipisicing
               elit.
             </p>
-            <i class="far fa-heart wrapper-info__icon"></i>
+
           </div>
+
         </article>
         <article class="card__item">
+          <a href="details.html" class="link-details">Detalles</a>
+          <input class="check-like" type="checkbox">
+          <div class="wrapper-like">
+            <i class="far fa-heart like-icon default"></i>
+            <i class="fas fa-heart like-icon clicked"></i>
+          </div>
           <video class="item-video" src="./assets/video/Waves - 70796.mp4" controls></video>
           <div class="wrapper-info">
-            <p class="wrapper-info__item">Pelicula</p>
-            <p class="wrapper-info__item">Calificacion</p>
+            <p class="wrapper-info__item">Amelie</p>
+            <p class="wrapper-info__item">3.5/5</p>
             <p class="wrapper-info__item">1987</p>
             <p class="wrapper-info__sinopsis">Lorem ipsum dolor sit amet consectetur adipisicing
               elit.
             </p>
-            <i class="far fa-heart wrapper-info__icon"></i>
           </div>
+
         </article>
       </section>
-    </section> -->
+    </section>
   </main>
 </body>
 

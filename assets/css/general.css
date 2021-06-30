@@ -1,0 +1,29 @@
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+/* VARS */
+
+:root {
+  --primary-bg: #0582ca;
+  --bg-color: #051923;
+  --btn-color: #003554;
+}
+
+/* RESET & GENERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+}
