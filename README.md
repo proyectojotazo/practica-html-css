@@ -21,9 +21,20 @@
 
 ### **_INDEX.HTML_**
 
-- ### IPHONE X
-  ![Iphone](./assets/screenshots/iphonex.png)
-- ### IPAD
-  ![Ipad](./assets/screenshots/iPad.png)
-- ### MSI (1536px x 722px)
-  ![MSI](./assets/screenshots/MSI.png)
+![Iphone](./assets/screenshots/iphonex.png)
+![Ipad](./assets/screenshots/ipad.png)
+![MSI](./assets/screenshots/MSI.png)
+
+### **MAIN.HTML**
+
+![Iphone](./assets/screenshots/iphonex-main.png)
+![Ipad](./assets/screenshots/ipad-main.png)
+![MSI](./assets/screenshots/MSI-main.png)
+![Monitor Samsung0](./assets/screenshots/monitor-main.png)
+
+### **DETAILS.HTML**
+
+![Iphone](./assets/screenshots/iphonex-details.png)
+![Ipad](./assets/screenshots/ipad-details.png)
+![MSI](./assets/screenshots/MSI-details.png)
+![Monitor Samsung0](./assets/screenshots/monitor-details.png)
