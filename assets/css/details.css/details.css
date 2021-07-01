@@ -24,24 +24,22 @@
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 1.5rem 0;
-  max-width: 360px;
+  font-size: 16px;
 }
 
 .film-card__info-title {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.25em;
 }
 
 .film-card__text-rating {
-  margin-right: 0.9rem;
-  font-size: 0.8rem;
-  align-self: center;
+  font-size: 0.8em;
 }
 
 .film-card__date-release {
-  font-size: 0.8rem;
+  font-size: 0.8em;
   align-self: center;
 }
 
@@ -82,17 +80,22 @@
 
 /* SINOPSIS */
 
+.film-card__sinopsis {
+  font-size: 16px;
+}
+
 .film-card__sinopsis-title {
   font-family: Montserrat-Bold;
   text-align: center;
-
   text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.25);
 }
 
 .film-card__sinopsis-text {
-  padding: 1.2rem;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 1rem;
   text-align: justify;
-  font-size: 0.75rem;
+  font-size: 0.75em;
 }
 
 /* RELATED CONTENT */
@@ -103,13 +106,14 @@
   justify-content: space-evenly;
   color: #fff;
   font-family: Montserrat-Regular;
+  font-size: 16px;
   margin: 1.2rem 0;
 }
 
 .related-content__title {
   width: 100%;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125em;
   margin: 1rem 0;
 }
 
@@ -126,4 +130,74 @@
 .related-content__card-title {
   margin: 0.8rem 0;
   text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 700px) {
+  .film-card__info,
+  .film-card__sinopsis,
+  .related-content {
+    font-size: 20px;
+  }
+
+  .actor-card__img {
+    width: 120px;
+  }
+
+  .actor-card__name {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .film-card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  .film-card__video {
+    width: 45%;
+    margin: 1rem;
+    margin-left: 3rem;
+    flex: 1;
+    max-width: unset;
+  }
+
+  .film-card__info {
+    width: 51%;
+    justify-content: space-evenly;
+    order: 2;
+  }
+
+  .film-card__actors {
+    order: 3;
+    margin: 2rem 0;
+  }
+
+  .film-card__actors-title {
+    width: unset;
+    margin: 0;
+    align-self: center;
+    font-size: 1.5rem;
+  }
+
+  .film-card__sinopsis {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    flex: 1;
+  }
+
+  .film-card__sinopsis-title {
+    margin: 1rem 0;
+  }
+
+  .film-card__sinopsis-text {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
