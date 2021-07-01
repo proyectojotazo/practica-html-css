@@ -22,7 +22,7 @@
 ### **_INDEX.HTML_**
 
 ![Iphone](./assets/screenshots/iphonex.png)
-![Ipad](./assets/screenshots/ipad.png)
+![Ipad](./assets/screenshots/iPad.png)
 ![MSI](./assets/screenshots/MSI.png)
 
 ### **MAIN.HTML**
