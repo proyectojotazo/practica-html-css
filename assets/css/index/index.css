@@ -75,12 +75,9 @@
   border-radius: 12px;
   width: 130px;
   height: 45px;
-}
-
-.btn__link-text {
   font-family: Montserrat-Regular;
   color: #fff;
-  text-decoration: none;
+  cursor: pointer;
 }
 
 .form__link-remember {
