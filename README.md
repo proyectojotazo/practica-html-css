@@ -15,26 +15,4 @@
   - [Pixabay](https://pixabay.com/es/)
   - [Random User Generator](https://randomuser.me/photos)
 
-## PREVISUALIZACIÓN
-
----
-
-### **_INDEX.HTML_**
-
-![Iphone](./assets/screenshots/iphonex.png)
-![Ipad](./assets/screenshots/iPad.png)
-![MSI](./assets/screenshots/MSI.png)
-
-### **MAIN.HTML**
-
-![Iphone](./assets/screenshots/iphonex-main.png)
-![Ipad](./assets/screenshots/ipad-main.png)
-![MSI](./assets/screenshots/MSI-main.png)
-![Monitor Samsung0](./assets/screenshots/monitor-main.png)
-
-### **DETAILS.HTML**
-
-![Iphone](./assets/screenshots/iphonex-details.png)
-![Ipad](./assets/screenshots/ipad-details.png)
-![MSI](./assets/screenshots/MSI-details.png)
-![Monitor Samsung0](./assets/screenshots/monitor-details.png)
+- Visualización de la practica: [Practica HTML5 CSS3](https://kc-practica-html-css.netlify.app/)

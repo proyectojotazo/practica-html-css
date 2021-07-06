@@ -101,13 +101,9 @@
 /* RELATED CONTENT */
 
 .related-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
   color: #fff;
   font-family: Montserrat-Regular;
   font-size: 16px;
-  margin: 1.2rem 0;
 }
 
 .related-content__title {
@@ -115,6 +111,13 @@
   text-align: center;
   font-size: 1.125em;
   margin: 1rem 0;
+}
+
+.related-content__grid-container {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(auto-fill, 340px);
+  gap: 0.5rem;
 }
 
 .related-content__card {
@@ -148,6 +151,10 @@
   .actor-card__name {
     margin-top: 1rem;
     width: 100%;
+  }
+
+  .related-content__grid-container {
+    grid-template-columns: repeat(2, 340px);
   }
 }
 
@@ -199,5 +206,9 @@
   .film-card__sinopsis-text {
     width: 70%;
     margin: 0 auto;
+  }
+
+  .related-content__grid-container {
+    grid-template-columns: repeat(auto-fit, 340px);
   }
 }
