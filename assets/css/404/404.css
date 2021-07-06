@@ -1,0 +1,104 @@
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../img/not-found-2384304.jpg);
+  background-position: center;
+  background-size: contain;
+  height: 100vh;
+}
+
+.error-container {
+  background-color: #fff;
+  font-size: 12px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+  position: absolute;
+  top: 25vh;
+  width: 95%;
+  height: 30vh;
+  animation: errMovement2 4s linear;
+}
+
+.error-container__title {
+  text-align: center;
+  font-family: Montserrat-Bold;
+  text-shadow: 2px 2px 5px #444;
+}
+
+.error-container__text {
+  text-align: justify;
+  font-family: Montserrat-Regular;
+  font-weight: 700;
+  padding: 0 1rem;
+}
+
+.link-return {
+  display: block;
+  background-color: var(--btn-color);
+  color: var(--primary-bg);
+  border-radius: 12px;
+  font-weight: 700;
+  font-family: Montserrat-Regular;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  width: 40%;
+  box-shadow: 2px 2px 5px var(--btn-color);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (orientation: landscape) {
+  .error-container {
+    height: 50vh;
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .error-container {
+    font-size: 14px;
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .error-container {
+    font-size: 16px;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .error-container {
+    font-size: 18px;
+  }
+}
+
+/* KEYFRAMES */
+
+@keyframes errMovement2 {
+  0% {
+    top: -35vh;
+  }
+  20% {
+    top: 25vh;
+  }
+  40% {
+    top: 5vh;
+  }
+  60% {
+    top: 25vh;
+  }
+  80% {
+    top: 15vh;
+  }
+  100% {
+    top: 25vh;
+  }
+}
