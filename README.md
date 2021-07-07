@@ -16,3 +16,7 @@
   - [Random User Generator](https://randomuser.me/photos)
 
 - Visualización de la practica: [Practica HTML5 CSS3](https://kc-practica-html-css.netlify.app/)
+
+- Se pueden ver las paginas _404_ y _Coming Soon_ aqui:
+  - [404](https://kc-practica-html-css.netlify.app/404.html)
+  - [Coming Soon](https://kc-practica-html-css.netlify.app/coming-soon.html)

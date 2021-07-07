@@ -8,6 +8,16 @@
   src: url(../fonts/Montserrat-Bold.ttf);
 }
 
+@font-face {
+  font-family: Tourney;
+  src: url(../fonts/Tourney-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Tourney-Regular;
+  src: url(../fonts/Tourney-Regular.ttf);
+}
+
 /* VARS */
 
 :root {

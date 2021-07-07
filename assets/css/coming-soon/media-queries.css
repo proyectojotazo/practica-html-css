@@ -1,0 +1,75 @@
+@media screen and (min-width: 768px) {
+  .data-release,
+  .form-subscribe {
+    font-size: 15px;
+  }
+
+  .text-animated {
+    animation-duration: 1.5s;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .data-release,
+  .form-subscribe {
+    font-size: 17px;
+  }
+
+  .text-animated {
+    animation-duration: 2s;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .data-release,
+  .form-subscribe {
+    font-size: 20px;
+  }
+
+  .text-animated {
+    animation-duration: 2.5s;
+  }
+
+  .data-release__flex-container {
+    margin: 1.5rem 0;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 812px) {
+  .text-animated {
+    animation-duration: 1.5s;
+  }
+
+  .data-release__flex-container {
+    margin: 1rem 0;
+  }
+
+  .form-subscribe {
+    top: 45vh;
+    height: 50vh;
+  }
+}
+
+/* IPAD PORTRAIT */
+
+@media screen and (orientation: portrait) and (min-width: 768px) and (min-height: 1024px) {
+  .form-subscribe {
+    top: 28vh;
+  }
+}
+
+/* IPAD PRO PROTRAIT AND LANDSCAPE */
+
+@media screen and (orientation: portrait) and (min-width: 1024px) and (min-height: 1366px) {
+  .form-subscribe {
+    top: 25vh;
+    height: 25vh;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 1366px) and (min-height: 1024px) {
+  .form-subscribe {
+    top: 30vh;
+    height: 25vh;
+  }
+}
