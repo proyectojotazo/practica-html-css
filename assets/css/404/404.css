@@ -25,13 +25,13 @@
 
 .error-container__title {
   text-align: center;
-  font-family: Montserrat-Bold;
+  font-family: var(--mons-bld-font);
   text-shadow: 2px 2px 5px #444;
 }
 
 .error-container__text {
   text-align: justify;
-  font-family: Montserrat-Regular;
+  font-family: var(--mons-reg-font);
   font-weight: 700;
   padding: 0 1rem;
 }
@@ -42,7 +42,7 @@
   color: var(--primary-bg);
   border-radius: 12px;
   font-weight: 700;
-  font-family: Montserrat-Regular;
+  font-family: var(--mons-reg-font);
   margin: 0.5rem auto;
   padding: 0.5rem;
   text-align: center;

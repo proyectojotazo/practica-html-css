@@ -8,7 +8,7 @@
 }
 
 .flex-container__title {
-  font-family: Montserrat-Regular;
+  font-family: var(--mons-reg-font);
   letter-spacing: 1px;
   margin: 0.8rem 0;
   text-align: center;

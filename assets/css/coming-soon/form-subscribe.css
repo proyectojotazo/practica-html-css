@@ -2,7 +2,7 @@
   background-color: var(--primary-bg);
   border-radius: 8px;
   box-shadow: 0px 2px 4px var(--primary-bg);
-  font-family: Montserrat-Regular;
+  font-family: var(--mons-reg-font);
   font-size: 13px;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,7 @@
 }
 
 .flex-container__item-input {
-  font-family: Montserrat-Regular;
+  font-family: var(--mons-reg-font);
   padding: 0.5rem;
   border: none;
   outline: none;
@@ -47,7 +47,7 @@
   font-size: 1em;
   width: 7.69em;
   height: 2.69em;
-  font-family: Montserrat-Regular;
+  font-family: var(--mons-reg-font);
   align-self: center;
   color: #fff;
   cursor: pointer;

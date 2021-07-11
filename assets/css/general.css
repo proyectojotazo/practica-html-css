@@ -25,6 +25,10 @@
   --bg-color: #051923;
   --btn-color: #003554;
   --header-height: 60px;
+  --mons-reg-font: Montserrat-Regular, Arial, Helvetica, sans-serif;
+  --mons-bld-font: Montserrat-Bold, Arial, Helvetica, sans-serif;
+  --tour-ita-font: Tourney, Arial, Helvetica, sans-serif;
+  --tour-reg-font: Tourney-Regular, Arial, Helvetica, sans-serif;
 }
 
 /* RESET & GENERAL */

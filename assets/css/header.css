@@ -4,7 +4,7 @@
   display: flex;
   color: #fff;
   background-color: var(--primary-bg);
-  font-family: Montserrat-Regular;
+  font-family: var(--mons-reg-font);
   font-size: 0.875rem;
   position: sticky;
   justify-content: space-between;
@@ -34,7 +34,7 @@
 
 .header__inp-search::placeholder {
   color: #ccc;
-  font-family: Montserrat-Regular;
+  font-family: var(--mons-reg-font);
 }
 
 /* HEADER-MENU */

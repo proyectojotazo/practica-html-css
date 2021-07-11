@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   color: #fff;
-  font-family: Montserrat-Regular;
+  font-family: var(--mons-reg-font);
   background-color: var(--primary-bg);
   border-radius: 0.75rem;
   width: 90%;
@@ -22,7 +22,7 @@
 }
 
 .form__title {
-  font-family: Montserrat-Bold;
+  font-family: var(--mons-bld-font);
   font-size: 36px;
   font-weight: bolder;
   text-shadow: 8px 4px 4px rgba(0, 0, 0, 0.25);
@@ -52,7 +52,7 @@
   background-color: var(--primary-bg);
   border: none;
   border-bottom: 2px solid var(--bg-color);
-  color: #333;
+  color: var(--bg-color);
   outline: none;
   font-size: 1.125rem;
   padding: 0 0.5rem;
@@ -61,10 +61,15 @@
 }
 
 .wrapper-items__input:focus {
-  color: var(--primary-bg);
+  color: #fff;
   border-color: rgb(255, 255, 255);
   border-radius: 4px 4px 0 0;
   background-color: var(--btn-color);
+}
+
+.wrapper-items__input::placeholder {
+  text-align: center;
+  color: var(--bg-color);
 }
 
 .form__btn {
@@ -75,13 +80,13 @@
   border-radius: 12px;
   width: 130px;
   height: 45px;
-  font-family: Montserrat-Regular;
+  font-family: var(--mons-reg-font);
   color: #fff;
   cursor: pointer;
 }
 
 .form__link-remember {
-  font-family: Montserrat-Regular;
+  font-family: var(--mons-reg-font);
   color: #fff;
   text-decoration: none;
   font-weight: 700;
